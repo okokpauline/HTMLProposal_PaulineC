@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pineapple King Bakery</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -15,11 +17,12 @@
         <h1>Pineapple King Bakery</h1>
     </header>
     <nav>
-        <ul>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Testimonial</a></li>
-            <li><a href="#">Locations</a></li>
-            <li><a href="#">Contact Us</a></li>
+        <ul class="navbar">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#testimonial">Testimonial</a></li>
+            <li><a href="#locations">Locations</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#orderpickup">Order Pickup</a></li>
         </ul>
     </nav>
 
@@ -49,8 +52,19 @@
         </section>
 
         <!-- Image Section -->
-        <section>
-            <img src="image/custardbun.jpeg" alt="Custard Buns">
+        <section id="imgBuns">
+            <article class="overlayContainer item">
+                <img src="image/custardbun.jpeg" alt="Custard Buns">
+                <p class="overlayText">Pineapple Buns</p>
+                <button class="overlayButton" style="vertical-align: middle;">
+                <span>See more</span></button>
+            </article>
+            <article class="overlayContainer item">
+                <img src="image/butterbuns.jpg" alt="5 Diffrent Flavors of Butterbuns">
+                <p class="overlayText">my overlay text</p>
+                <button class="overlayButton" style="vertical-align: middle;">
+                <span>See more</span></button>
+            </article>
         </section>
 
         <!-- Lists Section -->
@@ -59,7 +73,7 @@
                 <p>Reasons to visit our Pineapple King Bakery:</p>
 
                 <!-- Unordered List -->
-                <ul>
+                <ul class="reasonsList">
                     <li>Wide variety of freshly baked pineapple buns and pastries</li>
                     <li>Explore unique and seasonal delights, with regularly updated specials to keep your taste buds
                         excited.</li>
@@ -81,6 +95,6 @@
         <p>&copy; 2023 Pineapple King Bakery. All rights reserved.</p>
     </footer>
 
-</body>
+     </body>
 
 </html>

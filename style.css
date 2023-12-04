@@ -145,27 +145,12 @@ footer {
   font-weight: bold;
   text-align: center;
   white-space: nowrap;
-  transition: box-shadow 0.3s ease-in-out;
 }
 
 @keyframes pulse-grow {
   to {
     transform: scale(1.1);
   }
-}
-
-.overlayButton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-}
-
-.overlayButton span:after {
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
 }
 
 .overlayButton:hover {
@@ -176,12 +161,6 @@ footer {
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-
-.overlayButton:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
 
 .locationsContainer {
   display: flex;
